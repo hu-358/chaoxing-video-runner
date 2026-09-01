@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "指定课程视频顺序播放器",
+  "version": "1.0.3",
+  "description": "用于本地配置的指定课程：按官方 2 倍速真实播放未完成视频，并在页面上显示进度和日志。",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://mooc1.chaoxing.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mooc1.chaoxing.com/mycourse/studentstudy*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}
