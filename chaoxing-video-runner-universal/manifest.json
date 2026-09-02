@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "学习通课程视频播放器（通用版）",
+  "version": "2.0.0",
+  "description": "扫描手动打开的学习通课程，使用播放器官方倍速真实播放未完成视频，并提供多课程独立进度与失败日志。",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.chaoxing.com/*",
+    "http://*.chaoxing.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.chaoxing.com/mycourse/studentstudy*",
+        "http://*.chaoxing.com/mycourse/studentstudy*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    },
+    {
+      "matches": [
+        "https://*.chaoxing.com/*",
+        "http://*.chaoxing.com/*"
+      ],
+      "js": [
+        "portal.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}
