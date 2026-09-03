@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>v2.1.5 面板交互测试</title>
+  <style>
+    body{margin:0;min-height:100vh;background:linear-gradient(135deg,#edf3fb,#d9e5f4);font-family:"Microsoft YaHei",sans-serif}
+    main{padding:40px;color:#29415f}code{background:#fff;padding:2px 5px;border-radius:4px}
+  </style>
+</head>
+<body>
+  <main><h1>面板交互测试页</h1><p>此页面通过模拟扩展后台，直接加载当前目录的 <code>content.js</code>。</p></main>
+  <script>
+    (() => {
+      let panelLayout = { collapsed: false, left: null, top: null };
+      const courseState = {};
+      window.__panelMessages = [];
+      window.chrome = {
+        runtime: {
+          lastError: null,
+          getManifest: () => ({ version: "2.1.5" }),
+          sendMessage(message, callback) {
+            window.__panelMessages.push(message);
+            let result = null;
+            if (message.type === "courses:list") result = [];
+            if (message.type === "state:get") result = null;
+            if (message.type === "state:replace") Object.assign(courseState, message.state);
+            if (message.type === "course:register") result = message.state;
+            if (message.type === "ui:panel:get") result = panelLayout;
+            if (message.type === "ui:panel:set") {
+              panelLayout = { ...message.layout };
+              result = panelLayout;
+            }
+            callback({ ok: true, result });
+          }
+        }
+      };
+    })();
+  </script>
+  <script src="../content.js"></script>
+</body>
+</html>
