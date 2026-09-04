@@ -1,0 +1,15 @@
+:root { font-family: "Microsoft YaHei", "Segoe UI", sans-serif; color: #172033; }
+* { box-sizing: border-box; }
+body { width: 350px; margin: 0; padding: 18px; background: #f6f8fb; }
+header { display: flex; align-items: center; gap: 12px; }
+header img { width: 48px; height: 48px; border-radius: 11px; }
+header strong, header small { display: block; }
+header small { margin-top: 3px; color: #64748b; }
+p { font-size: 12px; line-height: 1.6; }
+.state { padding: 9px 11px; border-radius: 8px; background: #eaf8ef; color: #11633f; font-weight: 700; }
+.state.pending { background: #fff4dc; color: #8a5700; }
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+button { border: 1px solid #ccd6e5; border-radius: 8px; padding: 9px 7px; background: #fff; font-weight: 700; cursor: pointer; }
+button.primary { background: #1677ff; border-color: #1677ff; color: #fff; }
+button.danger { color: #b42318; }
+#status { min-height: 20px; margin-top: 10px; font-size: 12px; color: #11633f; }

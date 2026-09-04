@@ -1,0 +1,4 @@
+release/*.zip
+release/SHA256SUMS.txt
+.DS_Store
+Thumbs.db

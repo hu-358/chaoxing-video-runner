@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>首次使用说明｜学习通课程任务播放器</title>
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="card">
+      <div class="brand">
+        <img src="../icon-128.png" alt="扩展图标">
+        <div><span class="badge">首次使用说明</span><h1>学习通课程任务播放器（通用版）</h1></div>
+      </div>
+      <div class="notice warning"><strong>本扩展为独立开发的非官方工具。</strong></div>
+      <h2>运行前请确认</h2>
+      <ul>
+        <li>扩展只在你手动登录并打开的学习通课程页面中工作。</li>
+        <li>你点击“开始 / 继续”后，扩展会自动扫描章节、播放并静音课程视频、选择平台页面提供的倍速、逐页浏览官方文档，并切换到后续任务。</li>
+        <li>扩展不处理考试、测验、作业、讨论或问卷，也不会绕过验证码、人脸识别、身份验证或禁止切屏提示；检测到相关提示时会暂停。</li>
+        <li>扩展不会直接构造隐藏完成请求，任务是否完成以课程页面重新呈现的状态为准。</li>
+        <li>你应自行确认这种使用方式符合学习通、所在学校和具体课程的规则，并对自己的使用行为负责。</li>
+      </ul>
+      <h2>本地数据</h2>
+      <p>为显示和恢复进度，扩展会在当前 Edge 浏览器本地保存课程名称、课程与班级标识、章节和任务名称、任务状态、运行设置以及错误日志。扩展不读取密码或 Cookie，不使用开发者服务器，也不向开发者或第三方传输这些数据。</p>
+      <p>你可以随时在课程面板或扩展菜单中清除本地数据。详细内容请阅读<a href="privacy.html" target="_blank" rel="noreferrer">隐私说明</a>。</p>
+      <label class="check"><input id="agree" type="checkbox"><span>我已阅读并理解上述功能、数据处理方式与使用责任，同意在我主动操作后运行扩展。</span></label>
+      <div class="actions"><button id="accept" class="primary" type="button" disabled>同意并启用</button><button id="demo" type="button">查看离线演示</button></div>
+      <div id="status" class="status" role="status"></div>
+      <div class="footer">版本 2.2.0 · 发布者 HuZaiming · 支持邮箱 huzaiminghuzaiming@outlook.com</div>
+    </section>
+  </main>
+  <script src="onboarding.js"></script>
+</body>
+</html>

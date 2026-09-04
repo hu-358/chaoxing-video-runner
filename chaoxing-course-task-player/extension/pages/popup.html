@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>学习通课程任务播放器</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header><img src="../icon-128.png" alt=""><div><strong>课程任务播放器</strong><small>通用版 · v2.2.0</small></div></header>
+  <p id="consent-state" class="state">正在读取状态…</p>
+  <p>本扩展为独立开发的非官方工具。数据仅保存在当前 Edge 浏览器本地。</p>
+  <div class="actions">
+    <button id="onboarding" class="primary">首次使用说明</button>
+    <button id="demo">离线审核演示</button>
+    <button id="privacy">隐私说明</button>
+    <button id="clear" class="danger">清除全部本地数据</button>
+  </div>
+  <div id="status" role="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

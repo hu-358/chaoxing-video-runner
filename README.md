@@ -6,7 +6,9 @@
 
 ## 推荐版本
 
-日常使用请选择 [`chaoxing-video-runner-universal-v2.1.7`](./chaoxing-video-runner-universal-v2.1.7/)。它支持视频、PDF/PPT/Word 任务、后台恢复、多课程隔离、重试与最终状态核验。
+Edge 商店候选版本请选择 [`chaoxing-course-task-player`](./chaoxing-course-task-player/)，当前版本为 2.2.0。它在 2.1.7 的后台生命周期、播放器停滞判断和课程锁改进之上，增加首次确认、刷新后人工重新启动、隐私控制、离线审核演示和完整上架材料。
+
+日常历史版本仍可使用 [`chaoxing-video-runner-universal-v2.1.7`](./chaoxing-video-runner-universal-v2.1.7/)。
 
 ## 版本目录
 
@@ -22,6 +24,7 @@
 | `chaoxing-video-runner-universal-v2.1.5` | 2.1.5 | 历史修订版 |
 | `chaoxing-video-runner-universal-v2.1.6` | 2.1.6 | 改进独立任务节点核验 |
 | `chaoxing-video-runner-universal-v2.1.7` | 2.1.7 | 改进后台生命周期恢复与课程锁 |
+| `chaoxing-course-task-player` | 2.2.0 | Edge 商店候选版；增加合规、隐私、审核演示与上架材料 |
 
 每个目录均保留自身 README。仓库根目录不跟踪 ZIP 发布包，因为它们只是源代码目录的重复副本。
 
@@ -35,10 +38,11 @@
 
 ## 测试
 
-2.1.x 版本包含无第三方依赖的 Node.js 冒烟测试：
+2.1.x 与 2.2.0 版本包含无第三方依赖的 Node.js 冒烟测试：
 
 ```powershell
 node .\chaoxing-video-runner-universal-v2.1.7\tests\smoke.test.js
+node .\chaoxing-course-task-player\tests\smoke.test.js
 ```
 
 ## 隐私与安全
@@ -50,4 +54,4 @@ node .\chaoxing-video-runner-universal-v2.1.7\tests\smoke.test.js
 
 ## 许可证
 
-本项目以 [GNU General Public License v3.0 only](./LICENSE) 发布。GPL 允许商业使用，但分发本项目或其衍生版本时必须继续按 GPL 提供对应源代码，因此不能将分发的衍生版本闭源。
+历史版本以 [GNU General Public License v3.0 only](./LICENSE) 发布。Edge 商店候选目录另附 [MIT License](./chaoxing-course-task-player/LICENSE)，适用于该目录中明确发布的 2.2.0 源码。
