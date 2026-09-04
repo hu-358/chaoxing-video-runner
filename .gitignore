@@ -1,0 +1,33 @@
+# Local release archives (the unpacked source directories are tracked)
+*.zip
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.*
+credentials.*
+
+# Runtime exports and logs
+data/
+exports/
+logs/
+*.log
+
+# Dependencies, coverage and caches
+node_modules/
+coverage/
+.cache/
+.tmp/
+tmp/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
