@@ -1,6 +1,6 @@
 # Edge 商店页面（简体中文）
 
-> GitHub 仓库已确认为 `hu-358/chaoxing-video-runner`。当前 GitHub Pages 尚未启用；正式提交前必须确认下列三个页面可在未登录状态访问。
+> GitHub 仓库已确认为 `hu-358/chaoxing-video-runner`。下列三个 GitHub Pages 地址已于 2026-09-04 完成公开访问验证。
 
 ## 扩展名称
 

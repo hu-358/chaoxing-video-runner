@@ -120,7 +120,7 @@
 
 ## 七、当前剩余事项
 
-以 `PRE_PUBLISH_BLOCKERS.md` 为准。GitHub 用户名和仓库已经确认；目前仍需启用 GitHub Pages、完成 Microsoft 开发者身份验证，以及使用有权访问的真实课程进行手工测试。
+以 `PRE_PUBLISH_BLOCKERS.md` 为准。GitHub 用户名、仓库和 Pages 已经确认；目前仍需完成 Microsoft 开发者身份验证，以及使用有权访问的真实课程进行手工测试。
 
 ## 八、官方参考
 

@@ -15,8 +15,8 @@
 - [x] 确认 GitHub 用户名 `hu-358`，并替换商店资料中的占位符
 - [x] 确认现有公开仓库 `hu-358/chaoxing-video-runner`
 - [ ] 上传源码前运行个人信息与密钥扫描
-- [ ] 从 `docs/` 启用 GitHub Pages
-- [ ] 验证产品、隐私和支持 URL 可在未登录状态访问
+- [x] 通过 GitHub Actions 启用 GitHub Pages
+- [x] 验证产品、隐私和支持 URL 可在未登录状态访问
 - [ ] 创建 `v2.2.0` 标签和 Release
 
 ## 包与测试
