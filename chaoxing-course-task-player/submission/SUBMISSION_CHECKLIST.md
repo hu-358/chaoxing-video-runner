@@ -17,7 +17,7 @@
 - [ ] 上传源码前运行个人信息与密钥扫描
 - [x] 通过 GitHub Actions 启用 GitHub Pages
 - [x] 验证产品、隐私和支持 URL 可在未登录状态访问
-- [ ] 创建 `v2.2.0` 标签和 Release
+- [x] 创建 `v2.2.0` 标签和公开预发布 Release，并上传 ZIP 与 SHA-256
 
 ## 包与测试
 
