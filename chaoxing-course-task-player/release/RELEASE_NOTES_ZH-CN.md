@@ -17,7 +17,8 @@
 ## 安装包
 
 - 文件：`chaoxing-course-task-player-edge-v2.2.0.zip`
-- SHA-256：`b9286162caa4b1cafd20884c35e2fc774fbbe4a2807a0ffe0e13f1f7ef600154`
+- SHA-256：`e2629500f956d319de0b1836051827c6a1aaea26759708066171c8519cb86fe6`
+- 商店送审修订：补充简体中文默认语言元数据，不改变扩展功能。
 
 在 Microsoft Edge 中打开 `edge://extensions/`，启用开发人员模式，解压 ZIP 后选择“加载解压缩的扩展”。正式商店版本发布后，普通用户应优先通过 Edge 加载项商店安装。
 

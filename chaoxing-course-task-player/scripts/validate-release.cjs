@@ -10,6 +10,17 @@ const manifest = JSON.parse(fs.readFileSync(path.join(extension, "manifest.json"
 
 assert.equal(manifest.manifest_version, 3);
 assert.equal(manifest.version, "2.2.0");
+assert.equal(manifest.default_locale, "zh_CN");
+assert.equal(manifest.name, "__MSG_extensionName__");
+assert.equal(manifest.description, "__MSG_extensionDescription__");
+const zhMessages = JSON.parse(
+  fs.readFileSync(path.join(extension, "_locales", "zh_CN", "messages.json"), "utf8"),
+);
+assert.equal(zhMessages.extensionName.message, "学习通课程任务播放器（通用版）");
+assert.equal(
+  zhMessages.extensionDescription.message,
+  "用户主动启动后，自动依次播放学习通课程视频、浏览官方文档，并仅在本地记录任务进度与异常。",
+);
 assert.deepEqual(manifest.permissions.sort(), ["notifications", "storage"]);
 assert.equal(manifest.host_permissions, undefined);
 assert.equal(JSON.stringify(manifest).includes("http://"), false);

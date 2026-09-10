@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "学习通课程任务播放器（通用版）",
+  "name": "__MSG_extensionName__",
   "version": "2.2.0",
-  "description": "用户主动启动后，自动依次播放学习通课程视频、浏览官方文档，并仅在本地记录任务进度与异常。",
+  "description": "__MSG_extensionDescription__",
+  "default_locale": "zh_CN",
   "icons": {
     "16": "icons/icon-16.png",
     "32": "icons/icon-32.png",
